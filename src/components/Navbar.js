@@ -8,21 +8,21 @@ export const Navbar = () => {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <div className="menu flex items-center justify-center">
+      <div className="menu flex items-center justify-center font-bold text-base">
         <ul className="flex text-white items-center justify-center gap-10">
-          <li>
+          <li className="hover:text-purple duration-300">
             <a href="#1">Meet Mobot</a>
           </li>
-          <li>
+          <li className="hover:text-purple duration-200">
             <a href="#2">Training</a>
           </li>
-          <li>
+          <li className="hover:text-purple duration-200">
             <a href="#3">Reviews</a>
           </li>
-          <li>
+          <li className="hover:text-purple duration-200">
             <a href="#4">Shop</a>
           </li>
-          <li>
+          <li className="hover:text-purple duration-200">
             <a href="#5">Contact</a>
           </li>
           <li className="flex gap-1.5 cursor-pointer p-3 py-2 rounded-[50px] bg-green">
