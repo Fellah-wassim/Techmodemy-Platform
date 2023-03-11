@@ -26,8 +26,8 @@ export const Hero = () => {
   }, []);
   return (
     <div className="bg-darkerGreen relative flex flex-col items-center justify-center text-white py-20 pb-0">
-      <div className="flex flex-col items-center gap-8 w-1/2 z-40 ">
-        <h2 className="text-6xl font-bold">Robotics was Never More</h2>
+      <div className="header-container flex flex-col items-center gap-8 w-1/2 z-40 ">
+        <h2 className="h2 text-6xl font-bold">Robotics was Never More</h2>
         <div>
           <svg
             className="absolute  dash"
@@ -55,12 +55,15 @@ export const Hero = () => {
             />
           </svg>
           <div className="container flex items-center justify-center text-center">
-            <h1 key={index} className="animated-text font-bold text-8xl w-full">
+            <h1
+              key={index}
+              className="h1 animated-text font-bold text-8xl w-full"
+            >
               {values[index]}!
             </h1>
           </div>
           <svg
-            className="inline-block "
+            className="inline-block w-[100%]"
             width="378"
             height="22"
             viewBox="0 0 378 22"
@@ -75,7 +78,7 @@ export const Hero = () => {
             />
           </svg>
         </div>
-        <p className="text-2xl">
+        <p className="description text-2xl">
           At Techmology, we're committed to building a better future through
           robotics education. Join us on our mission to create the next
           generation of robotics experts!

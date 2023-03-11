@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* +++++++++++++++++++++++++++++ GENERAL ++++++++++++++++++++++++++++++++*/
 :root {
   --color-transparent: transparent;
   --color-current: currentColor;
@@ -14,6 +15,7 @@
   --color-yellow: #fdcf2a;
   --color-purple: #76388d;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Nunito Sans", sans-serif;
@@ -21,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* NAVBAR */
+/* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
 .menu ul li {
   border-radius: 50px;
   padding: 0.5rem 0.75rem;
@@ -41,6 +43,8 @@ body {
 .menu ul li:hover {
   background-color: var(--color-purple);
 }
+
+/* +++++++++++++++++++++++++++++ HERO ++++++++++++++++++++++++++++++++*/
 .dash {
   right: 50%;
   transform: translate(50%, 0);
@@ -73,5 +77,66 @@ body {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+/* +++++++++++++++++++++++++++++ QUERIES ++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width: 1370px) {
+  /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
+  .menu ul {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
+  .nav {
+    padding: 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
+  .nav {
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+  .logo {
+    visibility: hidden;
+    display: none;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .buttons p {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    height: 50px;
+    width: 100%;
+  }
+  .header-container {
+    width: 80%;
+  }
+  .dash {
+    display: none;
+  }
+  .h1 {
+    font-size: 3.5rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
   }
 }
