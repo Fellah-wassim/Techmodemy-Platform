@@ -80,6 +80,22 @@ body {
   }
 }
 
+.fade-from-right {
+  animation-name: fade-from-right;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 /* +++++++++++++++++++++++++++++ QUERIES ++++++++++++++++++++++++++++++++*/
 @media only screen and (max-width: 1370px) {
   /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
@@ -108,6 +124,17 @@ body {
   .menu ul {
     flex-direction: column;
     gap: 0.4rem;
+  }
+  /* +++++++++++++++++++++++++++++ Meet Mobot ++++++++++++++++++++++++++++++++*/
+  .meet-mobot-s1 {
+    padding: 0;
+  }
+
+  .meet-mobot-s2 {
+    width: 100%;
+  }
+  .meet-mobot-s2-first-div {
+    flex-direction: column;
   }
 }
 
