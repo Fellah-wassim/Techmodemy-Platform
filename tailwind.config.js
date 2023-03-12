@@ -18,11 +18,11 @@ module.exports = {
       purple: "#76388D",
     },
     screens: {
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-
       sm: "640px",
       // => @media (min-width: 640px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
 
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
