@@ -36,12 +36,12 @@ export const MeetMobot = () => {
             alt="robot pic"
             className="w-[10%] min-w-[80px]"
           />
-          <h1 className="text-yellow text-5xl font-bold">Pick your MoBot</h1>
+          <h1 className="text-yellow text-5xl font-bold">Pick Your MoBot</h1>
           <p className="text-2xl text-white leading-loose md:text-left">
             MoBot is a series of robotics kits designed to help children learn
             about the electronic components and mechanical structure of robots.
             We offer several different kits, ranging in complexity from beginner
-            to advanced
+            to advanced.
           </p>
         </div>
         <div
