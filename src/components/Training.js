@@ -22,7 +22,7 @@ export const Training = () => {
         <h1 className="text-5xl text-purple font-bold">
           Discover Our Robotics Training Courses
         </h1>
-        <p className=" text-lightenBlack text-2xl px-20 md:px-5 md:text-left">
+        <p className=" text-lightenBlack text-2xl px-20 md:px-0 md:text-left">
           MoBot is a series of robotics kits designed to help children learn
           about the electronic components and mechanical structure of robots. We
           offer several different kits, ranging in complexity from beginner to
