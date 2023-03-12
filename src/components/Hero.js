@@ -78,7 +78,7 @@ export const Hero = () => {
             />
           </svg>
         </div>
-        <p className="description text-2xl">
+        <p className="description text-3xl md:text-left">
           At Techmology, we're committed to building a better future through
           robotics education. Join us on our mission to create the next
           generation of robotics experts!
