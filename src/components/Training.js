@@ -36,19 +36,19 @@ export const Training = () => {
       </div>
       <div className="flex gap-3 items-center justify-center md:flex-col">
         <button className="flex gap-4 p-2 items-center justify-start bg-green rounded-3xl cursor-default">
-          <div className="rounded-[50%] bg-darkerGreen p-3">
+          <div className="rounded-[50%] bg-darkerGreen p-3 w-[44px] h-[44px]">
             <img src={powerIcon} alt="power icon" />
           </div>
           <p className="text-white text-xl pr-6">Interactive</p>
         </button>
         <button className="flex gap-4 p-2 items-center justify-start bg-yellow rounded-3xl cursor-default">
-          <div className="rounded-[50%] bg-darkerYellow p-3">
+          <div className="rounded-[50%] bg-darkerYellow p-3 w-[44px] h-[44px]">
             <img src={starIcon} alt="power icon" />
           </div>
           <p className="text-white text-xl pr-6">Best Instructors</p>
         </button>
         <button className="flex gap-4 p-2 items-center justify-start bg-red rounded-3xl cursor-default">
-          <div className="rounded-[50%] bg-darkerRed p-3">
+          <div className="rounded-[50%] bg-darkerRed p-3 w-[44px] h-[44px]">
             <img src={ideaIcon} alt="power icon" />
           </div>
           <p className="text-white text-xl pr-6">Insightful</p>
