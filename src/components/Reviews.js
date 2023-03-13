@@ -13,6 +13,7 @@ import circlePurpleB from "../assets/preview/circlePurpleB.svg";
 import circlePurple from "../assets/preview/circlePurple.svg";
 import circleBlueB from "../assets/preview/circleBlueB.svg";
 import circleBlue from "../assets/preview/circleBlue.svg";
+import techmodemyTxt from "../assets/preview/techmodemy.svg";
 
 const DATA = [
   {
@@ -109,37 +110,58 @@ export const Reviews = () => {
         <img
           src={circleRed}
           alt="bubble ellipses"
-          className="absolute left-[5%] top-[15%] z-0"
+          className={
+            (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
+            " circle absolute left-[5%] top-[15%] z-0"
+          }
         />
         <img
           src={circleBlueB}
           alt="bubble ellipses"
-          className="absolute left-[8%] top-[45%] z-0"
+          className={
+            (pageIndex % 2 === 0 ? "rtl-animation" : "hidden") +
+            " circle absolute left-[8%] top-[45%] z-0"
+          }
         />
         <img
           src={circleGreen}
           alt="bubble ellipses"
-          className="absolute bottom-[5%] left-[2%] z-0"
+          className={
+            (pageIndex % 2 === 0 ? "rtl-animation" : "ltr-animation") +
+            " circle absolute bottom-[5%] left-[2%] z-0"
+          }
         />
         <img
           src={circlePurpleB}
           alt="bubble ellipses"
-          className="absolute top-[10%] right-[5%] z-0"
+          className={
+            (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
+            " circle absolute top-[10%] right-[5%] z-0"
+          }
         />
         <img
           src={circlePurple}
           alt="bubble ellipses"
-          className="absolute bottom-[8%] left-[45%]  translate-x-1/2 z-0"
+          className={
+            (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
+            " circle absolute bottom-[8%] left-[45%]   z-0"
+          }
         />
         <img
           src={circleBlue}
           alt="bubble ellipses"
-          className="absolute bottom-[8%] right-[8%] z-0"
+          className={
+            (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
+            " circle absolute bottom-[8%] right-[8%] z-0"
+          }
         />
         <img
           src={circleYellow}
           alt="bubble ellipses"
-          className="absolute top-[8%] left-[42%]  translate-x-1/2 z-0"
+          className={
+            (pageIndex % 2 === 0 ? "rtl-animation" : "ltr-animation") +
+            " circle absolute top-[8%] left-[42%]   z-0"
+          }
         />
       </div>
 
@@ -214,6 +236,11 @@ export const Reviews = () => {
         <circle cx="60.5837" cy="91.2798" r="7.26292" fill="#D9D9D9" />
         <circle cx="125.523" cy="91.2798" r="7.26292" fill="#D9D9D9" />
       </svg>
+      <img
+        src={techmodemyTxt}
+        alt="techmodemy text"
+        className="absolute bottom-2"
+      />
     </div>
   );
 };

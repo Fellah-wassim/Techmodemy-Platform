@@ -137,7 +137,7 @@ body {
 
 @keyframes lef-to-right-animation {
   0% {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
   100% {
     transform: translateX(0%);
@@ -146,12 +146,13 @@ body {
 
 @keyframes right-to-left-animation {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-160%);
   }
   100% {
     transform: translateX(0%);
   }
 }
+
 /* +++++++++++++++++++++++++++++ QUERIES ++++++++++++++++++++++++++++++++*/
 @media only screen and (max-width: 1370px) {
   /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
