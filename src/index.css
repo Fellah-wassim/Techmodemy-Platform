@@ -96,6 +96,62 @@ body {
     transform: translateX(0%);
   }
 }
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease-in-out;
+}
+
+.rtl-animation {
+  animation-name: lef-to-right-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.ltr-animation {
+  animation-name: right-to-left-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lef-to-right-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes right-to-left-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 /* +++++++++++++++++++++++++++++ QUERIES ++++++++++++++++++++++++++++++++*/
 @media only screen and (max-width: 1370px) {
   /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/

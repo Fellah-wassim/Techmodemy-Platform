@@ -6,6 +6,13 @@ import kid1 from "../assets/preview/kid1.png";
 import kid2 from "../assets/preview/kid2.png";
 import kid3 from "../assets/preview/kid3.png";
 import kid4 from "../assets/preview/kid4.png";
+import circleRed from "../assets/preview/circleRed.svg";
+import circleGreen from "../assets/preview/circleGreen.svg";
+import circleYellow from "../assets/preview/circleYellow.svg";
+import circlePurpleB from "../assets/preview/circlePurpleB.svg";
+import circlePurple from "../assets/preview/circlePurple.svg";
+import circleBlueB from "../assets/preview/circleBlueB.svg";
+import circleBlue from "../assets/preview/circleBlue.svg";
 
 const DATA = [
   {
@@ -52,12 +59,12 @@ export const Reviews = () => {
   };
 
   return (
-    <div className="relative py-64 bg-darkerGreen">
+    <div className="relative py-64 md:py-28 bg-darkerGreen overflow-hidden">
       <div
         key={pageIndex}
         className={
           (DATA[pageIndex].id % 2 === 0 ? "flex-row-reverse" : "") +
-          " relative flex bg-white items-center h-[350px] md1090:h-fit justify-end px-48 py-32 gap-8 z-10 md1090:flex-col md1000:px-10"
+          " relative flex bg-white items-center h-[350px] md1090:h-fit justify-end px-48 py-32 md:py-4 gap-8 z-10 md1090:flex-col md1000:px-10"
         }
       >
         <div
@@ -73,29 +80,74 @@ export const Reviews = () => {
           <img src={rightBtn} alt="switch info button" />
         </div>
 
-        <div className="w-[35%] max-w-md border-2 border-purple border-dotted rounded-lg p-2">
+        <div
+          className={
+            (pageIndex % 2 === 0 ? "rtl-animation" : "ltr-animation") +
+            " w-[35%] max-w-md border-2 border-purple border-dotted rounded-lg p-2 z-20"
+          }
+        >
           <img
             src={DATA[pageIndex].img}
             alt={"kid" + DATA[pageIndex].id}
-            className=" w-[100%] rounded max-w-md "
+            className=" w-[100%] rounded max-w-md"
           />
         </div>
-        <div className="flex flex-col gap-4 text-2xl w-3/5 md1090:w-fit">
-          <p className="text-lightenBlack text-left font-bold">
+        <div className="flex flex-col gap-4 text-2xl w-3/5 md1090:w-fit z-10">
+          <p className="text-lightenBlack text-left font-bold fade-in">
             {DATA[pageIndex].text}
           </p>
           <p
-            className="px-4 py-1 text-white text-right w-fit self-end rounded"
+            className={
+              (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
+              " px-4 py-1 text-white text-right w-fit self-end rounded z-0"
+            }
             style={{ backgroundColor: DATA[pageIndex].color }}
           >
             {DATA[pageIndex].parentName}
           </p>
         </div>
+        <img
+          src={circleRed}
+          alt="bubble ellipses"
+          className="absolute left-[5%] top-[15%] z-0"
+        />
+        <img
+          src={circleBlueB}
+          alt="bubble ellipses"
+          className="absolute left-[8%] top-[45%] z-0"
+        />
+        <img
+          src={circleGreen}
+          alt="bubble ellipses"
+          className="absolute bottom-[5%] left-[2%] z-0"
+        />
+        <img
+          src={circlePurpleB}
+          alt="bubble ellipses"
+          className="absolute top-[10%] right-[5%] z-0"
+        />
+        <img
+          src={circlePurple}
+          alt="bubble ellipses"
+          className="absolute bottom-[8%] left-[45%]  translate-x-1/2 z-0"
+        />
+        <img
+          src={circleBlue}
+          alt="bubble ellipses"
+          className="absolute bottom-[8%] right-[8%] z-0"
+        />
+        <img
+          src={circleYellow}
+          alt="bubble ellipses"
+          className="absolute top-[8%] left-[42%]  translate-x-1/2 z-0"
+        />
       </div>
+
       <svg
+        key={DATA[pageIndex].id}
         className={
           (DATA[pageIndex].id % 2 === 0 ? "left-[15%]" : "right-[15%]") +
-          " absolute top-[5%] z-0"
+          " absolute top-[7%] z-0 w-[15%] md:top-[-7%] fade-up"
         }
         width="208"
         height="246"
