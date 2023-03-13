@@ -112,7 +112,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
-            " circle absolute left-[5%] top-[15%] z-0"
+            " circle absolute left-[5%] top-[15%] z-0 md:opacity-50 "
           }
         />
         <img
@@ -120,7 +120,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "rtl-animation" : "hidden") +
-            " circle absolute left-[8%] top-[45%] z-0"
+            " circle absolute left-[8%] top-[45%] z-0 md:opacity-50 md:hidden"
           }
         />
         <img
@@ -128,7 +128,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "rtl-animation" : "ltr-animation") +
-            " circle absolute bottom-[5%] left-[2%] z-0"
+            " circle absolute bottom-[5%] left-[2%] z-0 md:opacity-50 "
           }
         />
         <img
@@ -136,7 +136,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
-            " circle absolute top-[10%] right-[5%] z-0"
+            " circle absolute top-[10%] right-[5%] z-0 md:opacity-50"
           }
         />
         <img
@@ -144,7 +144,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
-            " circle absolute bottom-[8%] left-[45%]   z-0"
+            " circle absolute bottom-[8%] left-[45%]   z-0 md:opacity-50 md:hidden"
           }
         />
         <img
@@ -152,7 +152,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "ltr-animation" : "rtl-animation") +
-            " circle absolute bottom-[8%] right-[8%] z-0"
+            " circle absolute bottom-[8%] right-[8%] z-0 md:opacity-50 "
           }
         />
         <img
@@ -160,7 +160,7 @@ export const Reviews = () => {
           alt="bubble ellipses"
           className={
             (pageIndex % 2 === 0 ? "rtl-animation" : "ltr-animation") +
-            " circle absolute top-[8%] left-[42%]   z-0"
+            " circle absolute top-[8%] left-[42%]   z-0 md:opacity-50 "
           }
         />
       </div>
