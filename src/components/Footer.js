@@ -59,8 +59,8 @@ export const Footer = () => {
         </form>
       </div>
 
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-3 items-center justify-center z-10 ">
+      <div className="flex flex-col gap-6 md:text-xl z-10">
+        <div className="flex gap-3 items-center justify-center md:flex-col">
           <svg
             width="32"
             height="32"
@@ -81,7 +81,7 @@ export const Footer = () => {
             Rue B18 El djeniena Ilot 79 El Mohammadia
           </a>
         </div>
-        <div className="flex gap-3 items-center justify-center">
+        <div className="flex gap-3 items-center justify-center md:flex-col">
           <svg
             width="32"
             height="34"
@@ -106,7 +106,7 @@ export const Footer = () => {
             contact@techmology-dz.com
           </a>
         </div>
-        <div className="flex gap-3 items-center justify-center z-0">
+        <div className="flex gap-3 items-center justify-center md:flex-col">
           <svg
             width="25"
             height="25"
