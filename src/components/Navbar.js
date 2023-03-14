@@ -1,14 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/techmodemy.svg";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 400) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="nav flex items-center justify-between flex-wrap bg-teal-500 py-8 px-16 text-base font-semibold bg-darkerGreen">
+    <nav
+      key={isFixed}
+      className={`nav flex items-center justify-between flex-wrap bg-teal-500 text-base font-semibold bg-darkerGreen z-20 ${
+        isFixed
+          ? "sticky top-0 left-0 right-0 z-50 fade-down py-4 px-8"
+          : "py-8 px-16"
+      }`}
+    >
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>

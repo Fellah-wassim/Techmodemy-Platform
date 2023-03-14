@@ -18,7 +18,7 @@ export const Training = () => {
         alt="shape 2"
         className="absolute w-[15%] top-[5%] right-0"
       />
-      <div className="flex flex-col gap-8 justify-center items-center z-50">
+      <div className="flex flex-col gap-8 justify-center items-center z-10">
         <h1 className="text-5xl text-purple font-bold">
           Discover Our Robotics Training Courses
         </h1>
