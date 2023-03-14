@@ -14,7 +14,7 @@ export const Footer = () => {
         viewBox="0 0 460 121"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-6 z-0 w-[90%] "
+        className="absolute top-6 z-0 w-[90%]"
       >
         <path
           d="M33.9211 91.0968C37.2295 94.1467 38.0469 93.9127 50.3333 86.7398C61.8333 80.0606 62.5508 79.448 61.0002 77.7244C58.2241 74.5655 56.5425 75.0205 43.4136 82.5211C32.7125 88.6597 31.9823 89.3194 33.9211 91.0968Z"
@@ -45,7 +45,7 @@ export const Footer = () => {
         className="absolute top-[26.7%] z-0 right-[11%]"
       />
       <div className="h-[50%]">
-        <p className="text-bold text-5xl text-secondBlack">Contact Info</p>
+        <p className="text-bold text-5xl text-secondBlack z-10">Contact Info</p>
       </div>
       <div className=" w-[60%] bg-blue top-[50%] rounded-lg p-14 z-10 md:p-6 md:w-[90%]">
         <form className="flex flex-col gap-6  justify-center text-left">
@@ -85,7 +85,7 @@ export const Footer = () => {
         </form>
       </div>
 
-      <div className="flex flex-col gap-6 md:text-xl z-10">
+      <div className="flex flex-col gap-6 md:text-sm md:gap-4 z-10">
         <div className="flex gap-3 items-center justify-center md:flex-col">
           <svg
             width="32"
