@@ -7,6 +7,7 @@
   --color-transparent: transparent;
   --color-current: currentColor;
   --color-black: #000;
+  --color-secondBlack: #1e1e1e;
   --color-white: #fff;
   --color-green: #3eb073;
   --color-darkerGreen: #29975c;
@@ -23,6 +24,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input,
+textarea {
+  outline-color: var(--color-purple);
+}
 /* +++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++*/
 .menu ul li {
   border-radius: 50px;
@@ -69,6 +74,18 @@ body {
   animation-name: slide-up;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+}
+
+.textarea-form::-webkit-scrollbar {
+  border-radius: 50px;
+}
+
+.footer {
+  background: linear-gradient(
+    to bottom,
+    var(--color-white) 50%,
+    var(--color-secondBlack) 50%
+  );
 }
 
 @keyframes slide-up {

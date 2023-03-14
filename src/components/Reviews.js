@@ -6,13 +6,13 @@ import kid1 from "../assets/preview/kid1.png";
 import kid2 from "../assets/preview/kid2.png";
 import kid3 from "../assets/preview/kid3.png";
 import kid4 from "../assets/preview/kid4.png";
-import circleRed from "../assets/preview/circleRed.svg";
-import circleGreen from "../assets/preview/circleGreen.svg";
-import circleYellow from "../assets/preview/circleYellow.svg";
-import circlePurpleB from "../assets/preview/circlePurpleB.svg";
-import circlePurple from "../assets/preview/circlePurple.svg";
-import circleBlueB from "../assets/preview/circleBlueB.svg";
-import circleBlue from "../assets/preview/circleBlue.svg";
+import circleRed from "../assets/bubbles/circleRed.svg";
+import circleGreen from "../assets/bubbles/circleGreen.svg";
+import circleYellow from "../assets/bubbles/circleYellow.svg";
+import circlePurpleB from "../assets/bubbles/circlePurpleB.svg";
+import circlePurple from "../assets/bubbles/circlePurple.svg";
+import circleBlueB from "../assets/bubbles/circleBlueB.svg";
+import circleBlue from "../assets/bubbles/circleBlue.svg";
 import techmodemyTxt from "../assets/preview/techmodemy.svg";
 
 const DATA = [

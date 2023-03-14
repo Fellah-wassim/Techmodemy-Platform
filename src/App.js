@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { MeetMobot } from "./components/MeetMobot";
 import { Navbar } from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <MeetMobot />
       <Training />
       <Reviews />
+      <Footer />
     </div>
   );
 }
