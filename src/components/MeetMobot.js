@@ -13,7 +13,10 @@ export const MeetMobot = () => {
     setIndex(index === 0 ? 1 : 0);
   };
   return (
-    <div className="relative meet-mobot-container bg-secondBlack p-20 md:p-10">
+    <div
+      id="MeetMobot"
+      className="relative meet-mobot-container bg-secondBlack p-20 md:p-10"
+    >
       <img
         src={shape1}
         alt="shape1"

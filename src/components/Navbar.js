@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import logo from "../assets/techmodemy.svg";
 
 export const Navbar = () => {
@@ -7,6 +8,9 @@ export const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -72,19 +76,29 @@ export const Navbar = () => {
         <div className="menu flex items-center justify-center font-bold text-base">
           <ul className="flex text-white items-center justify-center gap-10">
             <li>
-              <a href="#1">Meet Mobot</a>
+              <Link to="MeetMobot" smooth={true} onClick={closeMenu}>
+                Meet Mobot
+              </Link>
             </li>
             <li>
-              <a href="#2">Training</a>
+              <Link to="Training" smooth={true} onClick={closeMenu}>
+                Training
+              </Link>
             </li>
             <li>
-              <a href="#3">Reviews</a>
+              <Link to="Review" smooth={true} onClick={closeMenu}>
+                Reviews
+              </Link>
             </li>
             <li>
-              <a href="#4">Shop</a>
+              <Link to="" smooth={true} onClick={closeMenu}>
+                Shop
+              </Link>
             </li>
             <li>
-              <a href="#5">Contact</a>
+              <Link to="Footer" smooth={true} onClick={closeMenu}>
+                Contact
+              </Link>
             </li>
             <li className="flex gap-1.5 cursor-pointer  bg-green">
               <svg

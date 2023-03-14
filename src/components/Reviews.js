@@ -49,18 +49,17 @@ const DATA = [
 export const Reviews = () => {
   let [pageIndex, setIndex] = useState(0);
   const leftBtnClicked = () => {
-    console.log("before setting index", pageIndex);
     pageIndex === 0 ? setIndex(3) : setIndex(--pageIndex);
-    console.log("after setting index", pageIndex);
   };
   const rightBtnClicked = () => {
-    console.log("before setting index", pageIndex);
     pageIndex === 3 ? setIndex(0) : setIndex(++pageIndex);
-    console.log("after setting index", pageIndex);
   };
 
   return (
-    <div className="relative py-64 md:py-28 bg-darkerGreen overflow-hidden">
+    <div
+      id="Review"
+      className="relative py-64 md:py-28 bg-darkerGreen overflow-hidden"
+    >
       <div
         key={pageIndex}
         className={

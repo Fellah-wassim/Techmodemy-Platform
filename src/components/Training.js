@@ -7,7 +7,10 @@ import platformMockup from "../assets/training/platform-mockup.png";
 
 export const Training = () => {
   return (
-    <div className="relative flex flex-col gap-8 bg-white p-40 pb-0 md:p-10 md:pb-0">
+    <div
+      id="Training"
+      className="relative flex flex-col gap-8 bg-white p-40 pb-0 md:p-10 md:pb-0"
+    >
       <img
         src={shape1}
         alt="shape 1"

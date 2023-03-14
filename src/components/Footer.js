@@ -7,7 +7,10 @@ import circleBlueB from "../assets/bubbles/circleBlueB.svg";
 
 export const Footer = () => {
   return (
-    <div className="footer relative overflow-hidden flex flex-col items-center gap-14 py-12 text-2xl text-white h-fit">
+    <div
+      id="Footer"
+      className="footer relative overflow-hidden flex flex-col items-center gap-14 py-12 text-2xl text-white h-fit"
+    >
       <svg
         width="460"
         height="121"
