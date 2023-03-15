@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkPage } from "react-router-dom";
 import logo from "../assets/techmodemy.svg";
 
 export const Navbar = () => {
@@ -76,29 +77,29 @@ export const Navbar = () => {
         <div className="menu flex items-center justify-center font-bold text-base">
           <ul className="flex text-white items-center justify-center gap-10">
             <li>
-              <Link to="MeetMobot" smooth={true} onClick={closeMenu}>
+              <LinkScroll to="MeetMobot" smooth={true} onClick={closeMenu}>
                 Meet Mobot
-              </Link>
+              </LinkScroll>
             </li>
             <li>
-              <Link to="Training" smooth={true} onClick={closeMenu}>
+              <LinkScroll to="Training" smooth={true} onClick={closeMenu}>
                 Training
-              </Link>
+              </LinkScroll>
             </li>
             <li>
-              <Link to="Review" smooth={true} onClick={closeMenu}>
+              <LinkScroll to="Review" smooth={true} onClick={closeMenu}>
                 Reviews
-              </Link>
+              </LinkScroll>
             </li>
             <li>
-              <Link to="" smooth={true} onClick={closeMenu}>
+              <LinkScroll to="" smooth={true} onClick={closeMenu}>
                 Shop
-              </Link>
+              </LinkScroll>
             </li>
             <li>
-              <Link to="Footer" smooth={true} onClick={closeMenu}>
+              <LinkScroll to="Footer" smooth={true} onClick={closeMenu}>
                 Contact
-              </Link>
+              </LinkScroll>
             </li>
             <li className="flex gap-1.5 cursor-pointer  bg-green">
               <svg
@@ -121,7 +122,7 @@ export const Navbar = () => {
       </div>
       <div className="buttons flex justify-center items-center text-teal-500 gap-[1.2rem] ">
         <div className="login-btn cursor-pointer border-2 border-white border-solid rounded-lg py-2 px-4 bg-green text-white ease-in duration-200 hover:bg-white hover:text-green">
-          <p>Log in</p>
+          <LinkPage to="/login">Log in</LinkPage>
         </div>
         <div className="border-2 border-white border-dotted rounded-lg p-2">
           <button className="get-started-btn py-2 px-4 rounded-lg font-bold bg-white text-purple ease-in duration-200 hover:bg-purple hover:text-white">
