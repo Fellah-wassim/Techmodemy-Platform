@@ -57,6 +57,26 @@ textarea {
   background-color: var(--color-purple);
 }
 
+.scrollbar-choose::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+/* Track */
+.scrollbar-choose::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollbar-choose::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.scrollbar-choose::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* +++++++++++++++++++++++++++++ HERO ++++++++++++++++++++++++++++++++*/
 .dash {
   right: 50%;
@@ -189,6 +209,20 @@ textarea {
   100% {
     transform: translateX(0%);
   }
+}
+
+.choose-img {
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.choose:hover .choose-img {
+  border: 2px solid var(--color-white);
+}
+
+.choose:focus .choose-img {
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
 }
 
 /* +++++++++++++++++++++++++++++ QUERIES ++++++++++++++++++++++++++++++++*/

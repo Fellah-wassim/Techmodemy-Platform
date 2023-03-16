@@ -9,6 +9,7 @@ module.exports = {
       black: "#000",
       secondBlack: "#1E1E1E",
       white: "#fff",
+      secondWhite: "#EEEEEE",
       green: "#3eb073",
       darkerGreen: "#29975C",
       red: "#e83c35",
@@ -19,6 +20,7 @@ module.exports = {
       yellow: "#fdcf2a",
       darkerYellow: "#F09E00",
       purple: "#76388D",
+      secondGray: "#989A9D",
     },
     screens: {
       sm: "640px",
@@ -31,6 +33,9 @@ module.exports = {
       // => @media (max-width: 767px) { ... }
 
       md1090: { max: "1090px" },
+      // => @media (max-width: 767px) { ... }
+
+      md1390: { max: "1390px" },
       // => @media (max-width: 767px) { ... }
 
       lg: "1024px",

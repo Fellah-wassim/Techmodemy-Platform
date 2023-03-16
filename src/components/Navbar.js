@@ -126,7 +126,7 @@ export const Navbar = () => {
         </div>
         <div className="border-2 border-white border-dotted rounded-lg p-2">
           <button className="get-started-btn py-2 px-4 rounded-lg font-bold bg-white text-purple ease-in duration-200 hover:bg-purple hover:text-white">
-            <p>Get Started</p>
+            <LinkPage to="/signup">Get Started</LinkPage>
           </button>
         </div>
       </div>

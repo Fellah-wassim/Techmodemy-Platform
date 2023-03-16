@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as LinkPage } from "react-router-dom";
 import robotHand from "../assets/header/robot-hand.svg";
 import robotFace from "../assets/header/robot-face.svg";
 import techmodemyTxt from "../assets/header/techmodemy.svg";
@@ -83,9 +84,11 @@ export const Hero = () => {
           robotics education. Join us on our mission to create the next
           generation of robotics experts!
         </p>
-        <button className="get-started-btn w-44 py-2 px-4 rounded-lg font-bold bg-white text-purple ease-in duration-200 hover:bg-purple hover:text-white">
-          <p>Get Started</p>
-        </button>
+        <LinkPage to="/signUp">
+          <button className="get-started-btn w-44 py-2 px-4 rounded-lg font-bold bg-white text-purple ease-in duration-200 hover:bg-purple hover:text-white">
+            <p>Get Started</p>
+          </button>
+        </LinkPage>
       </div>
       <img src={techmodemyTxt} alt="techmodemy text" className="pt-6" />
       <img
