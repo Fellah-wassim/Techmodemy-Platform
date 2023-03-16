@@ -34,7 +34,7 @@ export const SignUp = () => {
 
   const renderSwitch = (index) => {
     switch (index) {
-      case 0: {
+      case 0:
         return (
           <div
             key={index}
@@ -69,163 +69,152 @@ export const SignUp = () => {
             </div>
           </div>
         );
-        break;
-      }
+
       case 1:
-        {
-          return (
-            <div
-              key={index}
-              className="flex flex-col gap-6 items-center w-[100%]"
-            >
-              <div className="">
+        return (
+          <div
+            key={index}
+            className="flex flex-col gap-6 items-center w-[100%]"
+          >
+            <div className="">
+              <img src={robot} alt="mobot profile pic" className="w-[150px]" />
+              <p className="absolute top-[12%] translate-x-[50%] text-bold text-md px-4 py-2 text-white bg-blue rounded-full md:hidden">
+                I'm excited to know you
+              </p>
+            </div>
+            <div className="text-center">
+              <h1 className="text-2xl font-bold">You are..</h1>
+            </div>
+            <div className="flex gap-2 w-[100%] h-[200px] text-xl text-center md1390:overflow-y-scroll scrollbar-choose">
+              <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-purple duration-200 hover:text-white focus:bg-purple focus:text-white">
+                <img src={parent} alt="parent img" className="choose-img" />
+                <p className="py-2 px-6">Parent</p>
+              </button>
+              <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-yellow duration-200 hover:text-white focus:bg-yellow focus:text-white">
+                <img src={student} alt="student img" className="choose-img" />
+                <p className="py-2 px-6">Student</p>
+              </button>
+              <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-blue duration-200 hover:text-white focus:bg-blue focus:text-white">
                 <img
-                  src={robot}
-                  alt="mobot profile pic"
-                  className="w-[150px]"
+                  src={educational}
+                  alt="school img"
+                  className="choose-img"
                 />
-                <p className="absolute top-[12%] translate-x-[50%] text-bold text-md px-4 py-2 text-white bg-blue rounded-full md:hidden">
-                  I'm excited to know you
-                </p>
-              </div>
-              <div className="text-center">
-                <h1 className="text-2xl font-bold">You are..</h1>
-              </div>
-              <div className="flex gap-2 w-[100%] h-[200px] text-xl text-center md1390:overflow-y-scroll scrollbar-choose">
-                <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-purple duration-200 hover:text-white focus:bg-purple focus:text-white">
-                  <img src={parent} alt="parent img" className="choose-img" />
-                  <p className="py-2 px-6">Parent</p>
-                </button>
-                <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-yellow duration-200 hover:text-white focus:bg-yellow focus:text-white">
-                  <img src={student} alt="student img" className="choose-img" />
-                  <p className="py-2 px-6">Student</p>
-                </button>
-                <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-blue duration-200 hover:text-white focus:bg-blue focus:text-white">
-                  <img
-                    src={educational}
-                    alt="school img"
-                    className="choose-img"
-                  />
-                  <p className="py-2 px-6">Educational</p>
-                </button>
-                <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-red duration-200 hover:text-white focus:bg-red focus:text-white">
-                  <img src={trainer} alt="" className="choose-img" />
-                  <p className="py-2 px-6">trainer</p>
-                </button>
-              </div>
-              <div className="flex gap-4 text-center text-xl">
-                <button
-                  onClick={decrementIndex}
-                  className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
-                >
-                  Previous
-                </button>
-                <button
-                  onClick={incrementIndex}
-                  className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen"
-                >
-                  Next
-                </button>
-              </div>
+                <p className="py-2 px-6">Educational</p>
+              </button>
+              <button className="choose flex flex-col gap-2 cursor-pointer items-center justify-center border-2 border-secondGray bg-white p-6  w-[750px] rounded-lg text-secondGray hover:bg-red duration-200 hover:text-white focus:bg-red focus:text-white">
+                <img src={trainer} alt="" className="choose-img" />
+                <p className="py-2 px-6">trainer</p>
+              </button>
             </div>
-          );
-        }
-        break;
+            <div className="flex gap-4 text-center text-xl">
+              <button
+                onClick={decrementIndex}
+                className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
+              >
+                Previous
+              </button>
+              <button
+                onClick={incrementIndex}
+                className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        );
+
       case 2:
-        {
-          return (
-            <div className="flex flex-col gap-6 items-center w-[100%]">
-              <div className="">
-                <img src={robot} alt="" />
-              </div>
-              <div className="text-center">
-                <h3 className="text-purple font-semibold">QUESTION 1 OF 6</h3>
-                <h1 className="text-3xl font-bold">What is your name ?</h1>
-              </div>
-              <div className="w-[100%] flex items-center justify-center">
-                <form
-                  action=""
-                  className="flex flex-col w-[55%] md:w-[100%] items-center gap-4 text-semibold text-lg"
-                >
-                  <div className="flex flex-col gap-2 w-[100%]">
-                    <input
-                      required
-                      onChange={setMsg}
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Your name"
-                      className="rounded-3xl p-2 px-4"
-                    />
-                  </div>
-                  <div className="flex gap-4 text-center text-xl">
-                    <button
-                      onClick={decrementIndex}
-                      className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
-                    >
-                      Previous
-                    </button>
-                    <input
-                      type="submit"
-                      onClick={nextCheckNotEmpty}
-                      // onClick={incrementIndex}
-                      value="Next"
-                      className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen cursor-pointer"
-                    />
-                  </div>
-                </form>
-              </div>
+        return (
+          <div className="flex flex-col gap-6 items-center w-[100%]">
+            <div className="">
+              <img src={robot} alt="" />
             </div>
-          );
-        }
-        break;
+            <div className="text-center">
+              <h3 className="text-purple font-semibold">QUESTION 1 OF 6</h3>
+              <h1 className="text-3xl font-bold">What is your name ?</h1>
+            </div>
+            <div className="w-[100%] flex items-center justify-center">
+              <form
+                action=""
+                className="flex flex-col w-[55%] md:w-[100%] items-center gap-4 text-semibold text-lg"
+              >
+                <div className="flex flex-col gap-2 w-[100%]">
+                  <input
+                    required
+                    onChange={setMsg}
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your name"
+                    className="rounded-3xl p-2 px-4"
+                  />
+                </div>
+                <div className="flex gap-4 text-center text-xl">
+                  <button
+                    onClick={decrementIndex}
+                    className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
+                  >
+                    Previous
+                  </button>
+                  <input
+                    type="submit"
+                    onClick={nextCheckNotEmpty}
+                    // onClick={incrementIndex}
+                    value="Next"
+                    className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen cursor-pointer"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        );
+
       case 3:
-        {
-          return (
-            <div className="flex flex-col gap-6 items-center w-[100%]">
-              <div className="">
-                <img src={robot} alt="" />
-              </div>
-              <div className="text-center">
-                <h3 className="text-purple font-semibold">QUESTION 2 OF 6</h3>
-                <h1 className="text-3xl font-bold">How about your age?</h1>
-              </div>
-              <div className="w-[100%] flex items-center justify-center">
-                <form
-                  action=""
-                  className="flex flex-col w-[55%] md:w-[100%] items-center gap-4 text-semibold text-lg"
-                >
-                  <div className="flex flex-col gap-2 w-[100%]">
-                    <input
-                      required
-                      onChange={setMsg}
-                      type="number"
-                      name="age"
-                      id="age"
-                      placeholder="Your age"
-                      className="rounded-3xl p-2 px-4"
-                    />
-                  </div>
-                  <div className="flex gap-4 text-center text-xl">
-                    <button
-                      onClick={decrementIndex}
-                      className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
-                    >
-                      Previous
-                    </button>
-                    <input
-                      type="submit"
-                      onClick={nextCheckNotEmpty}
-                      value="Next"
-                      className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen cursor-pointer"
-                    />
-                  </div>
-                </form>
-              </div>
+        return (
+          <div className="flex flex-col gap-6 items-center w-[100%]">
+            <div className="">
+              <img src={robot} alt="" />
             </div>
-          );
-        }
-        break;
+            <div className="text-center">
+              <h3 className="text-purple font-semibold">QUESTION 2 OF 6</h3>
+              <h1 className="text-3xl font-bold">How about your age?</h1>
+            </div>
+            <div className="w-[100%] flex items-center justify-center">
+              <form
+                action=""
+                className="flex flex-col w-[55%] md:w-[100%] items-center gap-4 text-semibold text-lg"
+              >
+                <div className="flex flex-col gap-2 w-[100%]">
+                  <input
+                    required
+                    onChange={setMsg}
+                    type="number"
+                    name="age"
+                    id="age"
+                    placeholder="Your age"
+                    className="rounded-3xl p-2 px-4"
+                  />
+                </div>
+                <div className="flex gap-4 text-center text-xl">
+                  <button
+                    onClick={decrementIndex}
+                    className="get-started-btn py-2 px-8 rounded-lg font-bold bg-white text-green ease-in duration-200 hover:bg-green hover:text-white"
+                  >
+                    Previous
+                  </button>
+                  <input
+                    type="submit"
+                    onClick={nextCheckNotEmpty}
+                    value="Next"
+                    className="get-started-btn py-2 px-8 rounded-lg font-bold bg-green text-white ease-in duration-50 hover:bg-darkerGreen cursor-pointer"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        );
+
       default:
         break;
     }
